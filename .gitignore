@@ -1,0 +1,14 @@
+# macOS のシステムファイルを無視
+.DS_Store
+SwiftUIWorkshop/.DS_Store
+
+# Xcode のビルドフォルダを無視
+DerivedData/
+xcuserdata/
+
+# Swift Package Manager のキャッシュを無視
+.swiftpm/
+.build/
+
+# その他不要なファイル
+Pods/
