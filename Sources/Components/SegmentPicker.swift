@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-enum SegmentedType {
+public enum SegmentedType {
     case scrollable
     case fixed
 }
 
-struct SegmentedPicker<SelectionValue, Content>: View where SelectionValue: Hashable, Content: View {
+public struct SegmentedPicker<SelectionValue, Content>: View where SelectionValue: Hashable, Content: View {
     
     @Binding var selection: SelectionValue?
     @Binding var items: [SelectionValue]
@@ -21,7 +21,7 @@ struct SegmentedPicker<SelectionValue, Content>: View where SelectionValue: Hash
     private var content: (SelectionValue) -> Content
     private var type: SegmentedType
     
-    init(selection: Binding<SelectionValue?>,
+    public init(selection: Binding<SelectionValue?>,
          items: Binding<[SelectionValue]>,
          selectionColor: Color = .blue,
          type: SegmentedType,
@@ -33,7 +33,7 @@ struct SegmentedPicker<SelectionValue, Content>: View where SelectionValue: Hash
         self.content = content
     }
     
-    var body: some View {
+    public var body: some View {
         switch type {
         case .scrollable:
             scrollableButtons
