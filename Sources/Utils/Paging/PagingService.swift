@@ -20,9 +20,9 @@ public class PagingService<Item: Identifiable> {
     private var currentPage: OffsetPaging = .beforeFirst()
     private var listItems: [Item] = []
 
-    private let fetchTask: (OffsetPaging?) async throws -> (items: [Item], pagination: OffsetPaging)
+    private let fetchTask: (OffsetPaging) async throws -> (items: [Item], pagination: OffsetPaging)
 
-    public init(fetchTask: @escaping (OffsetPaging?) async throws -> (items: [Item], pagination: OffsetPaging)) {
+    public init(fetchTask: @escaping (OffsetPaging) async throws -> (items: [Item], pagination: OffsetPaging)) {
         self.fetchTask = fetchTask
     }
 
