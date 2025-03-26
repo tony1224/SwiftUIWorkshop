@@ -15,6 +15,7 @@ struct ContentView: View {
                 rollingTextLink
                 marqueeTextLink
                 segmentPickerView
+                pagingListView
             }
             .navigationTitle("SwiftUI Sample")
             .navigationBarTitleDisplayMode(.large)
@@ -42,6 +43,14 @@ struct ContentView: View {
             SegmentedPickerView()
         } label: {
             Text("SegmentPickerView")
+        }
+    }
+
+    private var pagingListView: some View {
+        NavigationLink {
+            PagingListView(repository: SampleUserRepository(showList: true))
+        } label: {
+            Text("PagingListView")
         }
     }
 

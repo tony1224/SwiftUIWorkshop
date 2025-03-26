@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/tony1224/SwiftUIWorkshop.git",
       "state" : {
-        "revision" : "8d5272fbce0dfc7e2f53f006530f71ea9ef2a1c8",
-        "version" : "1.3.0"
+        "revision" : "5f8dc20cf3992d55aa140dad5fafa819234a7a6f",
+        "version" : "1.4.2"
       }
     }
   ],
