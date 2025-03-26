@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBD4A58E2D93BABB00BD79EE /* SwiftUIWorkshop in Frameworks */ = {isa = PBXBuildFile; productRef = FBD4A58D2D93BABB00BD79EE /* SwiftUIWorkshop */; };
 		FBD59C3F2D9074C700F77D57 /* SwiftUIWorkshop in Frameworks */ = {isa = PBXBuildFile; productRef = FBD59C3E2D9074C700F77D57 /* SwiftUIWorkshop */; };
-		FBD59C422D9074E500F77D57 /* SwiftUIWorkshop in Frameworks */ = {isa = PBXBuildFile; productRef = FBD59C412D9074E500F77D57 /* SwiftUIWorkshop */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD59C3F2D9074C700F77D57 /* SwiftUIWorkshop in Frameworks */,
-				FBD59C422D9074E500F77D57 /* SwiftUIWorkshop in Frameworks */,
+				FBD4A58E2D93BABB00BD79EE /* SwiftUIWorkshop in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 			name = SwiftUIWorkshopDemo;
 			packageProductDependencies = (
 				FBD59C3E2D9074C700F77D57 /* SwiftUIWorkshop */,
-				FBD59C412D9074E500F77D57 /* SwiftUIWorkshop */,
+				FBD4A58D2D93BABB00BD79EE /* SwiftUIWorkshop */,
 			);
 			productName = SwiftUIWorkshopDemo;
 			productReference = FBD59C2B2D90746800F77D57 /* SwiftUIWorkshopDemo.app */;
@@ -104,7 +104,7 @@
 			mainGroup = FBD59C222D90746800F77D57;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				FBD59C402D9074E500F77D57 /* XCRemoteSwiftPackageReference "SwiftUIWorkshop" */,
+				FBD4A58C2D93BABB00BD79EE /* XCRemoteSwiftPackageReference "SwiftUIWorkshop" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FBD59C2C2D90746800F77D57 /* Products */;
@@ -349,7 +349,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FBD59C402D9074E500F77D57 /* XCRemoteSwiftPackageReference "SwiftUIWorkshop" */ = {
+		FBD4A58C2D93BABB00BD79EE /* XCRemoteSwiftPackageReference "SwiftUIWorkshop" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tony1224/SwiftUIWorkshop.git";
 			requirement = {
@@ -360,13 +360,13 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FBD59C3E2D9074C700F77D57 /* SwiftUIWorkshop */ = {
+		FBD4A58D2D93BABB00BD79EE /* SwiftUIWorkshop */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = FBD4A58C2D93BABB00BD79EE /* XCRemoteSwiftPackageReference "SwiftUIWorkshop" */;
 			productName = SwiftUIWorkshop;
 		};
-		FBD59C412D9074E500F77D57 /* SwiftUIWorkshop */ = {
+		FBD59C3E2D9074C700F77D57 /* SwiftUIWorkshop */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FBD59C402D9074E500F77D57 /* XCRemoteSwiftPackageReference "SwiftUIWorkshop" */;
 			productName = SwiftUIWorkshop;
 		};
 /* End XCSwiftPackageProductDependency section */
