@@ -16,6 +16,7 @@ struct ContentView: View {
                 marqueeTextLink
                 segmentPickerView
                 pagingListView
+                pagingListViewForObservation
             }
             .navigationTitle("SwiftUI Sample")
             .navigationBarTitleDisplayMode(.large)
@@ -50,7 +51,15 @@ struct ContentView: View {
         NavigationLink {
             PagingListView(repository: SampleUserRepository(showList: true))
         } label: {
-            Text("PagingListView")
+            Text("PagingList")
+        }
+    }
+
+    private var pagingListViewForObservation: some View {
+        NavigationLink {
+            PagingListView2()
+        } label: {
+            Text("PagingListForObservation")
         }
     }
 
