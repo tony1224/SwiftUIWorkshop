@@ -39,6 +39,9 @@ struct PagingListView2: View {
         .refreshable {
             await vm.refreshList()
         }
+        .alert(vm.showToastMessage ?? "", isPresented: .constant(vm.showToastMessage != nil)) {
+            Button("OK", role: .cancel) { }
+        }
         .navigationTitle("Paging")
     }
 
