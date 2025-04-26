@@ -25,7 +25,6 @@ struct PagingListView: View {
             case .loaded(let users, let footerID):
                 ForEach(users) { user in
                     Text(user.username)
-//                    UserListItem(imageUrls: [user.userIconURL], username: user.username)
                 }
                 if let footerID {
                     ListFooterView {
@@ -38,9 +37,6 @@ struct PagingListView: View {
             }
         }
         .listStyle(.plain)
-//        .onReceive(vm.showToast) { message in
-//            ToastView.show(text: message, style: .red)
-//        }
         .task {
             await vm.fetchList()
         }
@@ -53,7 +49,6 @@ struct PagingListView: View {
     private var loadingView: some View {
         ProgressView()
             .listRowSeparator(.hidden)
-            // 画面上下中央表示が難しいため画面上部から120pxの位置にloadingを表示
             .padding(.vertical, 120)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
